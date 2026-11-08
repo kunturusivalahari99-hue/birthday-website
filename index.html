@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Dear Bava</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+      radial-gradient(circle at top, #542039, #160d18 65%, #08070c);
+    color: #fff;
+    font-family: Georgia, serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 24px;
+    background: rgba(36, 17, 31, 0.95);
+    border: 1px solid #c9a45d;
+    border-radius: 22px;
+    text-align: center;
+    box-shadow: 0 0 35px #c59a4933;
+}
+
+.small {
+    color: #e4c47f;
+    letter-spacing: 4px;
+    font-size: 11px;
+}
+
+h1 {
+    color: #e8c783;
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+button {
+    background: linear-gradient(135deg, #e8ce98, #b88a45);
+    color: #241323;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 25px;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+.hidden {
+    display: none;
+}
+
+.letter {
+    text-align: left;
+    white-space: pre-line;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #f5eaf0;
+    padding: 20px 15px;
+    background: #ffffff09;
+    border: 1px solid #c9a45d66;
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.heart {
+    font-size: 35px;
+    margin: 15px;
+}
+
+.footer {
+    color: #d8b77c;
+    font-size: 12px;
+    margin-top: 25px;
+    letter-spacing: 2px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div id="first">
+        <div class="small">A SPECIAL SURPRISE</div>
+
+        <div class="heart">✦</div>
+
+        <h1>Hey Bava! ❤️</h1>
+
+        <p>
+            Someone has a little surprise
+            waiting just for you.
+        </p>
+
+        <p>Are you ready?</p>
+
+        <button onclick="openGift()">
+            OPEN YOUR SURPRISE ✨
+        </button>
+    </div>
+
+
+    <div id="second" class="hidden">
+
+        <div class="small">MADE WITH LOVE</div>
+
+        <div class="heart">💗</div>
+
+        <h1>Happy Birthday!</h1>
+
+        <p>
+            Happy Birthday to someone
+            who holds a special place in my heart.
+        </p>
+
+        <p>One little letter, just for you...</p>
+
+        <button onclick="openLetter()">
+            READ MY HEART 💌
+        </button>
+
+    </div>
+
+
+    <div id="third" class="hidden">
+
+        <div class="small">A LETTER FROM MY HEART</div>
+
+        <h1>Dear Bava! ❤️</h1>
+
+        <div class="letter">
+Happy Birthday bava! 💗✨🎂
+
+Thanks for coming into my life raa. Naa biggest dream enti ante, ninnu life lo successful gaa chudadam raa. I am so sorry for ever thinking that way raa, because there is no reason for that. Once again, happy happy birthday bava! ❤️
+
+Nenu neeku expensive gifts am ivvaledhu raa, but genuinely gaa devudini okkate korukuntunna. Nuvvu eppudu bagundali, nee life lo nvu success avvali ani. 🙏
+
+Nenu kuda ninnu artham chesukunnanu raa. Nee side nunchi kuda alochinchanu. Nuvvu cheppedi correct ey raa. Nenu konchem over expectations pettukunnanu. Nuvvu cheppedi naa brain ki artham avuthundhi, kani naa heart ki artham avvadam ledhu raa. Nenu em cheyyalenu dhaniki, but ninnu artham chesukunnanu raa.
+
+Life long unta ani annav gaa, alaane undu. Naa future husband gaa nuvvu undali ani anukunnanu raa. Kaani ala jaragakapoyina nenu em badha paranu. Nuvvu naa future lo undavu ani naaku badha ledhu ani kaadhu raa. Manam em cheyyalemu, mana destiny ela unte ala jaruguthundhi anthe. It's all about destiny raa. ❤️
+
+Ninnu oka small request aduguthunna bava. Call lo matladuthunnappudu please call cut cheyyaku raa. Ala chesthe naaku chala hurting gaa vundhi raa 🥺
+
+Nuvvu anukovachu, naa birthday kuda naaku theliyadhu ani. Kaani nenu matram eeroju fix ayipoyanu. Naaku matram nee birthday eeroju bava.
+
+Long distance chala kastam gaa undhi raa. Kaani em cheyyalem, elaago ala undaka thappadhu. ❤️🫂
+
+Once again, happy happy happy birthday my dear bava garu! 🥳❤️
+        </div>
+
+        <div class="heart">❤️</div>
+
+        <p>
+            Miles apart, but my wishes
+            are always with you.
+        </p>
+
+        <div class="footer">
+            MADE WITH LOVE · JUST FOR YOU
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function openGift() {
+    document.getElementById("first").classList.add("hidden");
+    document.getElementById("second").classList.remove("hidden");
+}
+
+function openLetter() {
+    document.getElementById("second").classList.add("hidden");
+    document.getElementById("third").classList.remove("hidden");
+}
+
+</script>
+
+</body>
+</html>
